@@ -2,8 +2,8 @@ import UIKit
 
 class OnboardingViewController: UIViewController {
 
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var titleLabel: UILabel?
+    @IBOutlet weak var button: UIButton?
 
     private var eventHandler: OnboardingEventHandlerProtocol?
 
@@ -14,18 +14,18 @@ class OnboardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.eventHandler?.showOnboardingView(request: Model.ShowOnboardingView.Request())
+        eventHandler?.showOnboardingView(request: Model.ShowOnboardingView.Request())
     }
 
     private func setup() {
         let presenter = OnboardingPresenter(view: self)
         let interactor = OnboardingInteractor(presenter: presenter)
 
-        self.eventHandler = interactor
+        eventHandler = interactor
     }
 
     @IBAction func didTapContinue(_ sender: Any) {
-        self.eventHandler?.completeOnboarding()
+        eventHandler?.completeOnboarding()
     }
 }
 
@@ -36,7 +36,7 @@ extension OnboardingViewController: OnboardingViewProtocol {
     }
 
     func showOnboardingView(viewModel: Model.ShowOnboardingView.ViewModel) {
-        self.titleLabel.text = viewModel.title
-        self.button.setTitle(viewModel.buttonTitle, for: .normal)
+        titleLabel?.text = viewModel.title
+        button?.setTitle(viewModel.buttonTitle, for: .normal)
     }
 }
