@@ -12,6 +12,10 @@ final class OnboardingInteractor {
 }
 
 extension OnboardingInteractor: OnboardingInteractorProtocol {
+}
+
+extension OnboardingInteractor: OnboardingEventHandlerProtocol {
+    
     func completeOnboarding() {
         self.worker.completeOnboarding()
         self.presenter.dismissOnboarding()

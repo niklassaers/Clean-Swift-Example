@@ -1,7 +1,6 @@
 import Foundation
 
+// Presenters perspective on Interactor
 protocol OnboardingInteractorProtocol {
 
-    func completeOnboarding()
-    func showOnboardingView(request: Model.ShowOnboardingView.Request)
 }

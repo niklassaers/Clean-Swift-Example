@@ -5,7 +5,7 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var button: UIButton!
     
-    private var eventHandler: OnboardingInteractorProtocol?
+    private var eventHandler: OnboardingEventHandlerProtocol?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)

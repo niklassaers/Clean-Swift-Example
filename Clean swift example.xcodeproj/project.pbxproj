@@ -22,6 +22,7 @@
 		6F3E1BE1247577DC006858F8 /* OnboardingInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BE0247577DC006858F8 /* OnboardingInteractorProtocol.swift */; };
 		6F3E1BE3247577F9006858F8 /* OnboardingPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BE2247577F9006858F8 /* OnboardingPresenterProtocol.swift */; };
 		6F3E1BE52475782A006858F8 /* OnboardingWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BE42475782A006858F8 /* OnboardingWorkerProtocol.swift */; };
+		6F3E1BEE24757A40006858F8 /* OnboardingEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BED24757A40006858F8 /* OnboardingEventHandlerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		6F3E1BE0247577DC006858F8 /* OnboardingInteractorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingInteractorProtocol.swift; sourceTree = "<group>"; };
 		6F3E1BE2247577F9006858F8 /* OnboardingPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterProtocol.swift; sourceTree = "<group>"; };
 		6F3E1BE42475782A006858F8 /* OnboardingWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWorkerProtocol.swift; sourceTree = "<group>"; };
+		6F3E1BED24757A40006858F8 /* OnboardingEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEventHandlerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			children = (
 				58C7D9912472D801005472E4 /* OnboardingInteractor.swift */,
 				6F3E1BE0247577DC006858F8 /* OnboardingInteractorProtocol.swift */,
+				6F3E1BED24757A40006858F8 /* OnboardingEventHandlerProtocol.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				6F3E1BE3247577F9006858F8 /* OnboardingPresenterProtocol.swift in Sources */,
 				58C7D9902472D442005472E4 /* OnboardingViewController.swift in Sources */,
 				58C7D9982472DAA1005472E4 /* OnboardingWorker.swift in Sources */,
+				6F3E1BEE24757A40006858F8 /* OnboardingEventHandlerProtocol.swift in Sources */,
 				58C7D9922472D801005472E4 /* OnboardingInteractor.swift in Sources */,
 				6F3E1BDF24757759006858F8 /* OnboardingViewProtocol.swift in Sources */,
 			);
