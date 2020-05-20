@@ -1,11 +1,5 @@
 import Foundation
 
-protocol OnboardingPresenterProtocol {
-    func dismissOnboarding()
-    
-    func presentOnboarding(response: Model.ShowOnboardingView.Response)
-}
-
 final class OnboardingPresenter {
     
     weak var view: OnboardingViewProtocol?
@@ -16,6 +10,7 @@ final class OnboardingPresenter {
 }
 
 extension OnboardingPresenter: OnboardingPresenterProtocol {
+    
     func dismissOnboarding() {
         self.view?.dismiss()
     }
