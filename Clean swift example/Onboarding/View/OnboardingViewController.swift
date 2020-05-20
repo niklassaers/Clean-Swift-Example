@@ -6,6 +6,16 @@ class OnboardingViewController: UIViewController {
     @IBOutlet weak var button: UIButton?
 
     private var eventHandler: OnboardingEventHandlerProtocol?
+    
+    var viewModel: Model.ShowOnboardingView.ViewModel? {
+        didSet {
+            refresh()
+        }
+    }
+    
+    private func refresh() {
+        // master of all UI updating
+    }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
