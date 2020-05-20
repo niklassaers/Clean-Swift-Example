@@ -32,7 +32,7 @@ class OnboardingViewController: UIViewController {
 extension OnboardingViewController: OnboardingViewProtocol {
 
     func dismiss() {
-        self.dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
 
     func showOnboardingView(viewModel: Model.ShowOnboardingView.ViewModel) {

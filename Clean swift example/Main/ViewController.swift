@@ -9,11 +9,11 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        let viewController = self.storyboard?.instantiateViewController(identifier: "onboarding")
+        let viewController = storyboard?.instantiateViewController(identifier: "onboarding")
         viewController?.isModalInPresentation = true
 
         if let controller = viewController {
-            self.present(controller, animated: true, completion: nil)
+            present(controller, animated: true, completion: nil)
         }
     }
 }

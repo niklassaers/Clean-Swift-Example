@@ -12,11 +12,14 @@ final class OnboardingPresenter {
 extension OnboardingPresenter: OnboardingPresenterProtocol {
 
     func dismissOnboarding() {
-        self.view?.dismiss()
+        view?.dismiss()
     }
 
     func presentOnboarding(response: Model.ShowOnboardingView.Response) {
-        let viewModel = Model.ShowOnboardingView.ViewModel(title: "Welcome", buttonTitle: "Continue")
-        self.view?.showOnboardingView(viewModel: viewModel)
+        let viewModel = Model.ShowOnboardingView.ViewModel(
+            title: "Welcome",
+            buttonTitle: "Continue")
+        
+        view?.showOnboardingView(viewModel: viewModel)
     }
 }
