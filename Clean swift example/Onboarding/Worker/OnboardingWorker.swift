@@ -1,7 +1,10 @@
 import Foundation
 
 final class OnboardingWorker: OnboardingWorkerProtocol {
+    
+    lazy var userDefaults: UserDefaultsProtocol = UserDefaults.standard
+    
     func completeOnboarding() {
-        UserDefaults.standard.set(true, forKey: "onboarding-complete")
+        userDefaults.set(true, forKey: "onboarding-complete")
     }
 }

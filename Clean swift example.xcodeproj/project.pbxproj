@@ -23,6 +23,7 @@
 		6F3E1BE3247577F9006858F8 /* OnboardingPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BE2247577F9006858F8 /* OnboardingPresenterProtocol.swift */; };
 		6F3E1BE52475782A006858F8 /* OnboardingWorkerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BE42475782A006858F8 /* OnboardingWorkerProtocol.swift */; };
 		6F3E1BEE24757A40006858F8 /* OnboardingEventHandlerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BED24757A40006858F8 /* OnboardingEventHandlerProtocol.swift */; };
+		6F3E1BF124757C59006858F8 /* UserDefaultsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3E1BF024757C59006858F8 /* UserDefaultsProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		6F3E1BE2247577F9006858F8 /* OnboardingPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPresenterProtocol.swift; sourceTree = "<group>"; };
 		6F3E1BE42475782A006858F8 /* OnboardingWorkerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingWorkerProtocol.swift; sourceTree = "<group>"; };
 		6F3E1BED24757A40006858F8 /* OnboardingEventHandlerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEventHandlerProtocol.swift; sourceTree = "<group>"; };
+		6F3E1BF024757C59006858F8 /* UserDefaultsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		6F3E1BEB24757907006858F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6F3E1BEF24757C4A006858F8 /* SDK Protocols */,
 				58C7D9872472D3A3005472E4 /* Info.plist */,
 				58C7D97F2472D3A2005472E4 /* Main.storyboard */,
 				58C7D9822472D3A3005472E4 /* Assets.xcassets */,
@@ -167,6 +170,14 @@
 				58C7D97D2472D3A2005472E4 /* ViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		6F3E1BEF24757C4A006858F8 /* SDK Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6F3E1BF024757C59006858F8 /* UserDefaultsProtocol.swift */,
+			);
+			path = "SDK Protocols";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				58C7D97E2472D3A2005472E4 /* ViewController.swift in Sources */,
 				6F3E1BE1247577DC006858F8 /* OnboardingInteractorProtocol.swift in Sources */,
 				58C7D97A2472D3A2005472E4 /* AppDelegate.swift in Sources */,
+				6F3E1BF124757C59006858F8 /* UserDefaultsProtocol.swift in Sources */,
 				58C7D97C2472D3A2005472E4 /* SceneDelegate.swift in Sources */,
 				58F08AB52474273800D3F440 /* OnboardingModels.swift in Sources */,
 				58C7D9942472D8E1005472E4 /* OnboardingPresenter.swift in Sources */,
